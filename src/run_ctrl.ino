@@ -15,12 +15,12 @@ void run_ctrl_execute() {
   const double angle_vel_down = 0.0;
 
   // 直進制御における左右のタイヤの距離差の補正ゲイン
-  const double Ks_p = 10.0 ; // 40.0
+  const double Ks_p = 7.0 ; // 40.0
   const double Ks_i =  0.0 ; // 0.2  1.0  
-  const double Ks_d = 100.0 ; // 50.0  20.0  5.0
+  const double Ks_d = 75.0 ; // 50.0  20.0  5.0
 
   // 回転制御における左右のタイヤの距離差の補正ゲイン
-  const double Kr = 0.0;
+  const double Kr = 2.0;
 
   int sign;
   double d_l, d_r, v_l, v_r, ratio, vel_ref, vel_mod;
